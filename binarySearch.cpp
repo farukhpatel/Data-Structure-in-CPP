@@ -4,8 +4,15 @@ using namespace std;
 int binarySearch(int arr[],int n,int key ){
     int s=0;
     int e=n-1;
+    // for(int i=0;i<n;i++){
+    //     if(arr[i]==key){
+    //         return i;
+    //     }
+    // }
+    // return -1; THis is linear search time complexity  n
     while (s<=e)
     {
+        //  THis is Binary search time complexity  log(n) base 2
         int mid=(s+e)/2;
         if(arr[mid]==key){
           return mid;
